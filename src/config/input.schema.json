@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FR Carre Opera Scraper Input Configuration",
+  "type": "object",
+  "properties": {
+    "startUrls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "description": "Initial URLs to start crawling from."
+    },
+    "maxDepth": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 2,
+      "description": "Maximum link depth for the crawler."
+    },
+    "maxPages": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 50,
+      "description": "Maximum number of pages to scrape in a single run."
+    },
+    "sameDomainOnly": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, restricts crawling to the domains of the start URLs."
+    },
+    "allowedDomains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Optional explicit whitelist of allowed hostnames."
+    },
+    "outputFile": {
+      "type": "string",
+      "default": "data/sample-output.json",
+      "description": "Path to the JSON file where scraped data will be saved."
+    },
+    "delayMs": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 500,
+      "description": "Delay in milliseconds between requests, for politeness."
+    },
+    "logLevel": {
+      "type": "string",
+      "enum": ["debug", "info", "warn", "error"],
+      "default": "info",
+      "description": "Logging verbosity level."
+    }
+  },
+  "required": ["startUrls"],
+  "additionalProperties": false
+}
