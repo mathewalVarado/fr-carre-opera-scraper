@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://www.carre-opera.com/events/sample",
+    "title": "Sample Event Title",
+    "textContent": "A preview of the event details and description.",
+    "links": [
+      "https://www.carre-opera.com/tickets",
+      "https://www.carre-opera.com/contact"
+    ],
+    "metadata": {
+      "category": "Performance",
+      "language": "FR",
+      "description": "A short meta description of the sample event page.",
+      "keywords": [
+        "opera",
+        "performance",
+        "sample"
+      ],
+      "openGraphType": "website",
+      "openGraphLocale": "fr_FR",
+      "sourceUrl": "https://www.carre-opera.com/events/sample"
+    }
+  }
+]
