@@ -1,0 +1,40 @@
+{
+  "name": "fr-carre-opera-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for carre-opera.com to collect performance and event data.",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "start:config": "ts-node src/main.ts data/input.example.json",
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "scraper",
+    "crawler",
+    "carre-opera",
+    "cheerio",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "target": "ES2019",
+      "moduleResolution": "node"
+    }
+  }
+}
