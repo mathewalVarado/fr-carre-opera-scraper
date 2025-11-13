@@ -1,0 +1,15 @@
+{
+  "startUrls": [
+    "https://www.carre-opera.com/"
+  ],
+  "maxDepth": 2,
+  "maxPages": 20,
+  "sameDomainOnly": true,
+  "allowedDomains": [
+    "www.carre-opera.com",
+    "carre-opera.com"
+  ],
+  "outputFile": "data/sample-output.json",
+  "delayMs": 500,
+  "logLevel": "info"
+}
